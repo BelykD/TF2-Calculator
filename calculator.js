@@ -15,7 +15,7 @@ function updateValue() {
     const refValue = parseFloat(ref.value); // Gets value input into Refined Price
     const keyValue = parseFloat(key.value); // Gets value input into Key Amount
 
-    outResult = refValue * keyValue;
+    const outResult = refValue * keyValue;
     // Outputting calculated value to display - Total Metal
     res.innerHTML = '<span class="highlight" id="refTotal">'
         + outResult.toFixed(2) + '</span>';
